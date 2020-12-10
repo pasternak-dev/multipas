@@ -11,7 +11,6 @@ export default (props) => {
             <meta name="theme-color" content="#000000" />
             <meta name="description" content="New generation online cinema. Opening in 2021" />
             <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
-            <link rel="stylesheet" href="/assets/css/media.css"/>
             <title>Multipas | {props.page}</title>
         </Head>
     )

@@ -1,10 +1,12 @@
-@import 'normalization.scss';
+@import 'normalize.scss';
 @import 'mixins/media-screen.scss';
 
 // common
 @import './fonts.scss';
+@import './vars.scss';
 
 // components
+@import '~components/Header/Header.scss';
 @import '~components/Carousel/Carousel.scss';
 @import '~components/ui/LeftArrow/LeftArrow.scss';
 @import '~components/ui/RightArrow/RightArrow.scss';

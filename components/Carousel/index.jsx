@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Slide from './slide';
-import landingData from 'public/data/data';
+import landingData from 'public/assets/data/carousel-data';
 import LeftArrow from 'components/ui/LeftArrow';
 import RightArrow from 'components/ui/RightArrow';
 
@@ -45,12 +45,13 @@ export default class Carousel extends Component {
     return (
       <div className='carousel'>
         <div className='carousel-items'>
-          <LeftArrow
-            goToPrevSlide={() => this.goToPrevSlide()}
-          />
           <Slide
             landingData={landingData}
             activeIndex={this.state.activeIndex}
+            numberOfFilms={this.state.length}
+          />
+          <LeftArrow
+            goToPrevSlide={() => this.goToPrevSlide()}
           />
           <RightArrow
             goToNextSlide={() => this.goToNextSlide()}
